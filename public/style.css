@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --color-yellow: #fcba43;
+}
 
 * {
   margin: 0;
@@ -31,4 +35,30 @@ header {
 
 .links a {
   text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+.links a.active {
+  font-weight: bold;
+  color: var(--color-yellow);
+}
+
+.links a:hover {
+  color: var(--color-yellow);
+}
+
+.links a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: var(--color-yellow);
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+}
+
+.links a:hover::after {
+  width: 100%;
+  transition: width 500ms ease-in-out;
 }
