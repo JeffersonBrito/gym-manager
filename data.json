@@ -1,0 +1,13 @@
+{
+  "instructors": [
+    {
+      "id": 1,
+      "name": "Gabriela",
+      "avatar_url": "https://mastertechfiles.s3-sa-east-1.amazonaws.com/site-2020/remoto-pocket.jpg",
+      "birth": "2020-04-14",
+      "gender": "F",
+      "services": "Musculação",
+      "created_at": 1586457421344
+    }
+  ]
+}
